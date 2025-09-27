@@ -2,6 +2,7 @@ fn main() {
     let mut vec = vec![1, 3, 5, 7];
     
     println!("{:?}", func(&vec));
+    println!("");
     vec.push(15);
     println!("{:?}", vec);
     let mut val = 2;
@@ -18,6 +19,6 @@ fn func (val: &Vec<i8>) -> bool {
     }
 }
 
-fn add_two(num1: i8) {
-    num1 + 2;
+fn add_two(num1: i8) -> i8 {
+    num1 + 2
 }

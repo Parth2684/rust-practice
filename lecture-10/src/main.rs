@@ -17,6 +17,5 @@ fn cal_area(shape: Shape) -> f64{
         Shape::Circle(radius) => std::f64::consts::PI * radius * radius,
         Shape::Square(side) => side * side,
         Shape::Rectange(len,bre ) => len * bre
-    }
-    
-}
+    }   
+} 
