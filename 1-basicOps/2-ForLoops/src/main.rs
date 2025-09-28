@@ -1,12 +1,19 @@
 #[derive(Debug)]
 struct ResultIsEven {
     number: u16,
-    is_even: bool
+    is_even: IsEvenType
+}
+#[derive(Debug)]
+enum IsEvenType {
+    Even,
+    Odd
 }
 
 
 fn main() {
-    println!("{:?}", is_even())
+    for item in is_even() {
+        println!("{} is {:?}", item.number, item.is_even)
+    }
 }
 
 
@@ -16,12 +23,12 @@ fn is_even() -> Vec<ResultIsEven> {
         if i%2 == 0 {
             result.push(ResultIsEven {
                 number: i,
-                is_even: true
+                is_even: IsEvenType::Even
             });
         }else {
             result.push(ResultIsEven {
                 number: i,
-                is_even: false
+                is_even: IsEvenType::Odd
             });
         }
     }
