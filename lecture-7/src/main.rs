@@ -1,12 +1,9 @@
-use core::num;
-
 fn main() {
     let _var = 1; // stack
-    let mut s = "hello".to_string();  //heap
+    let mut s = "hello".to_string(); //heap
     s.push_str(", world");
-
     // ownership
-    let x = vec![s.clone()] ;
+    let x = vec![s.clone()];
     println!("{}", s);
     println!("{:?}", x);
 

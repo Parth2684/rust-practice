@@ -2,12 +2,12 @@ fn main() {
     let mut num = 0;
     'counter: loop {
         println!("{}", num);
-        num+=1;
+        num += 1;
         let mut decreasing = 5;
         loop {
             println!("{}", decreasing);
-            decreasing-=1;
-            if decreasing == 0  {
+            decreasing -= 1;
+            if decreasing == 0 {
                 break;
             }
             if num == 5 {
@@ -29,7 +29,6 @@ fn main() {
     for element in vec {
         println!("{}", element);
     }
-
 
     for elem in (0..9).rev() {
         println!("{}", elem);
