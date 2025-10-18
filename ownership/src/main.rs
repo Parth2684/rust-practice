@@ -6,14 +6,13 @@ fn main() {
     let x = vec![s.clone()];
     println!("{}", s);
     println!("{:?}", x);
-
     let num1 = 1;
     let num2 = num1;
     println!("{} {}", num1, num2);
 
     let mut str = String::from("Hello");
     change_string(&mut str);
-    println!("{}", str)
+    println!("{}", str);
 }
 
 fn change_string(some_string: &mut String) {

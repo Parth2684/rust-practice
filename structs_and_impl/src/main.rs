@@ -1,5 +1,3 @@
-use std::iter::Enumerate;
-
 struct User {
     active: bool,
     username: String,
