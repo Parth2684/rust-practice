@@ -1,0 +1,8 @@
+[package]
+name = "find_and_replace_cli"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+regex = "1.12.2"
+text-colorizer = "1.0.0"
